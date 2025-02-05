@@ -22,7 +22,7 @@ const sdk = new opentelemetry.NodeSDK({
     url: "http://localhost:4318/v1/traces", // OpenTelemetry Collector HTTP endpoint
   }),
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: "express-opentelemetry-app-2",
+    [SemanticResourceAttributes.SERVICE_NAME]: "express-opentelemetry-app", //This is what is used in the OTel Collector routing table
   }),
   instrumentations: [
     new ExpressInstrumentation(),

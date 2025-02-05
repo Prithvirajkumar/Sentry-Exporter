@@ -7,8 +7,8 @@ At the end of this, you will have:
 - Two Node.js applications capable of creating events.
 - Errors will be sent to two different Sentry projects using the Sentry SDK.
 - Traces will be sent to the OTel Collector from where it was exported to the two Sentry projects and two corresponding HoneyComb projects.
-- Traces were created using the OTel SDK and used as context within the Sentry error.
-- See errors from Sentry with traces from Otel and confirm that the same trace id is used between Sentry and Honeycomb.
+- Traces will be created using the OTel SDK and used as context within the Sentry error.
+- You should be able to see errors from Sentry with traces from Otel and confirm that the same trace id is used between Sentry and Honeycomb.
 
 # Prerequisites:
 

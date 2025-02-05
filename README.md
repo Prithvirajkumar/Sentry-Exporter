@@ -27,13 +27,17 @@ Install the Collector using Docker - https://opentelemetry.io/docs/collector/ins
 Add Sentry DSN Keys and Honey Comb API Keys in `otel-collector-config.yaml`
 
 Navigate within the Collector-Configuration folder and run:
+
 // stop the container if it is already running
+
 docker stop otel-collector 
 
 // remove the container if it is already running
+
 docker rm otel-collector 
 
 // start the container with the provided configuration file
+
 docker run -d --name otel-collector \
   -v "$(pwd)/otel-collector-config.yaml:/etc/otel-collector-config.yaml" \
   -p 4317:4317 -p 4318:4318 \

@@ -13,22 +13,22 @@ exporters:
   otlphttp/honeycomb-express-app:
     endpoint: "https://api.honeycomb.io"
     headers:
-      "x-honeycomb-team": "cEFfn4DGWSCFHNfbqecX5a"
+      "x-honeycomb-team": "Enter Honeycomb's Project One's API Key Here" #<------
       "x-honeycomb-dataset": "express-opentelemetry-app-dataset"
 
   otlphttp/honeycomb-express-app-2:
     endpoint: "https://api.honeycomb.io"
     headers:
-      "x-honeycomb-team": "gDJYf9KL8XdOALiIqnvqVD"
+      "x-honeycomb-team": "Enter Honeycomb's Project Two's API Key Here" #<------
       "x-honeycomb-dataset": "express-opentelemetry-app-2-dataset"
 
   # Sentry Exporters
   sentry/express-app:
-    dsn: "https://a54f975c0645b4e41d3ff35a27a1a34f@o1161257.ingest.us.sentry.io/4505918888935424"
+    dsn: "Enter Sentry Project One's DSN Key Here" #<------
     environment: "prod"
 
   sentry/express-app-2:
-    dsn: "https://d898d7274cfb1b9e94dd753f452b1722@o1161257.ingest.us.sentry.io/4508739229843456"
+    dsn: "Enter Sentry Project Two's DSN Key Here" #<------
     environment: "prod"
 
 processors:

@@ -8,7 +8,7 @@ require("./tracing");
 
 // Initialize Sentry
 Sentry.init({
-  dsn: "https://d898d7274cfb1b9e94dd753f452b1722@o1161257.ingest.us.sentry.io/4508739229843456",
+  dsn: "Enter Sentry Project One's DSN Key Here", //<------ Enter Details
   tracesSampleRate: undefined,
   environment: "prod",
   beforeSend(event) {

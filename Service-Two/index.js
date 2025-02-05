@@ -7,7 +7,7 @@ require("./tracing");
 
 // Initialize Sentry
 Sentry.init({
-  dsn: "https://a54f975c0645b4e41d3ff35a27a1a34f@o1161257.ingest.us.sentry.io/4505918888935424",
+  dsn: "Enter Sentry Project Two's DSN Key Here", //<------ Enter Details
   tracesSampleRate: undefined,
   environment: "prod",
 });

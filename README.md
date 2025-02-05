@@ -1,4 +1,4 @@
-# Sentry Exporter.
+# Sentry Exporter Test
 
 This repo allows users to test the Sentry Exporter.
 

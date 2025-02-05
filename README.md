@@ -1,4 +1,5 @@
-#Sentry Exporter.
+# Sentry Exporter.
+
 This repo allows users to test the Sentry Exporter.
 
 At the end of this, you will have:
@@ -9,32 +10,38 @@ At the end of this, you will have:
 - Traces were created using the OTel SDK and used as context within the Sentry error.
 - See errors from Sentry with traces from Otel and confirm that the same trace id is used between Sentry and Honeycomb.
 
-#Prerequisites:
+# Prerequisites:
+
 Create a Sentry and Honeycomb instance and have the DSN and API keys ready.
 
-#Step 1:
+# Step 1:
+
 Clone or Fork the repo.
 
-#Step 2:
+# Step 2:
+
 Install the Collector using Docker - https://opentelemetry.io/docs/collector/installation/
 
-#Step 3:
+# Step 3:
+
 Add Sentry DSN Keys and Honey Comb API Keys in `otel-collector-config.yaml`
 
 Navigate within the Collector folder and run:
 `docker stop otel-collector`
-`docker rm otel-collector`
-`docker run -d --name otel-collector \`
-`-v "$(pwd)/otel-collector-config.yaml:/etc/otel-collector-config.yaml" \`
-`-p 4317:4317 -p 4318:4318 \`
-`otel/opentelemetry-collector-contrib --config=/etc/otel-collector-config.yaml`
 
-#Step 4:
+`docker rm otel-collector`
+
+`docker run -d --name otel-collector \`
+`-v "$(pwd)/otel-collector-config.yaml:/etc/otel-collector-config.yaml" \ -p 4317:4317 -p 4318:4318 \ otel opentelemetry-collector-contrib --config=/etc/otel-collector-config.yaml`
+
+# Step 4:
+
 Run `npm install` within Service-One and Service-Two
 
-#Step 5:
+# Step 5:
+
 Add Sentry DSN Key and HoneyComb API Key
 
-#Step 6:
+# Step 6:
+
 Run `node -r ./tracing.js index.js` in Service-One and Service-Two
-# Sentry-Exporter

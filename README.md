@@ -40,7 +40,7 @@ Run `npm install` within Service-One and Service-Two
 
 # Step 5:
 
-Add Sentry DSN Key and HoneyComb API Key
+Add Sentry DSN Key and HoneyComb API Key in `index.js` and `tracing.js` in Service-One and Service-Two
 
 # Step 6:
 
